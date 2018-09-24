@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+    
+	<script type="text/javascript">
+    //getting the url 
+    var url="https://api.github.com/users/rajatpatra12";
+    //fetching data from the url
+    fetch(url).then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        //consoling the data
+        console.log(data);
+    })
+    .catch(function(err){
+        console.log(err);
+    })
+    </script>
+</body>
+</html>
